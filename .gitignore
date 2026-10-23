@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+node_modules/
+dist/
+.DS_Store
+repo.zip
+temp_extract/
+promptwar1356/
