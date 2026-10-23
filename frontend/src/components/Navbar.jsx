@@ -59,13 +59,10 @@ export default function Navbar({ user, onAuthClick, activeIllum, onIllumChange, 
             </span>
           </button>
 
-          <button
-            onClick={onAuthClick}
-            className="flex items-center gap-2 bg-primary-container hover:bg-primary hover:text-on-primary text-on-primary-container px-4 py-2 rounded-xl text-xs font-semibold transition-all shadow-sm"
-          >
-            <span>{user ? "👤" : "🔒"}</span>
-            <span>{user ? (user.displayName || "Stylist Profile") : "Firebase Sign-In"}</span>
-          </button>
+          <div className="flex items-center gap-2 bg-primary/10 border border-primary/20 text-primary px-3.5 py-1.5 rounded-xl text-xs font-semibold">
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Direct Dashboard Live</span>
+          </div>
         </div>
 
       </div>
